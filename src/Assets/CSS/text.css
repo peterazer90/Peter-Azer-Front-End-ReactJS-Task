@@ -1,0 +1,11 @@
+.TextCenter {
+    text-align: center;
+}
+
+.TextUpperCase {
+    text-transform: uppercase;
+}
+
+.TextCapitalize {
+    text-transform: capitalize;
+}

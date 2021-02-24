@@ -1,0 +1,23 @@
+.FlexCenterItems {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.FlexColumnItems {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.JustifyContentCenter {
+    justify-content: center;
+}
+
+.JustifyContentBetween {
+    justify-content: space-between;
+}
+
+.JustifyContentAround {
+    justify-content: space-around;
+}

@@ -1,0 +1,35 @@
+.BgOrange {
+    background-color: #edae61;
+}
+
+.TextOrange {
+    color: #edae61;
+}
+
+.BgDark {
+    background-color: #292933;
+}
+
+.TextDark {
+    color: #292933;
+}
+
+.BgLight {
+    background-color: #9da6b9;
+}
+
+.TextLight {
+    color: #9da6b9;
+}
+
+.BorderLight {
+    border-color: #9da6b9 !important;
+}
+
+.BgWhite {
+    background-color: #fff;
+}
+
+.TextWhite {
+    color: #fff;
+}

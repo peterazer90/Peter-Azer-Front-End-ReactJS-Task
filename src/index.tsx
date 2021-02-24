@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './Assets/CSS/default.css';
 import reportWebVitals from './reportWebVitals';
+import Radio from './Pages/Radio/Radio';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Radio />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
 
 // If you want to start measuring performance in your app, pass a function

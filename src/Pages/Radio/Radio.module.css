@@ -1,0 +1,105 @@
+.main {
+    composes: FlexColumnItems JustifyContentCenter from "../../Assets/CSS/flex.css";
+    max-width: 768px;
+    margin: auto;
+}
+
+/** Radio Header Style ******************************************************************/
+.header {
+    composes: FlexCenterItems from "../../Assets/CSS/flex.css";
+    composes: BgOrange TextWhite from "../../Assets/CSS/color.css";
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+.headerTitle {
+    composes: TextCenter TextUpperCase from "../../Assets/CSS/text.css";
+    flex-grow: 1;
+    font-weight: bold;
+}
+
+/** Radio List Style **********************************************************************/
+
+.list {
+    composes: BgDark from "../../Assets/CSS/color.css";
+    margin: 0;
+    padding: 0;
+}
+
+.listItem {
+    list-style: none;
+    padding: 0 20px;
+}
+
+.listItem:hover {
+    background-color: #343441;
+}
+
+.listItemButton {
+    composes: FlexCenterItems JustifyContentBetween from "../../Assets/CSS/flex.css";
+    composes: TextCapitalize from "../../Assets/CSS/text.css";
+    composes: TextLight BorderLight from "../../Assets/CSS/color.css";
+    padding: 15px 0;
+    border-bottom: 1px solid !important;
+}
+
+.listItem:last-of-type .listItemButton {
+    border: none !important;
+}
+
+.listCoverContainer {
+    overflow: hidden;
+}
+
+.listCoverItem {
+    composes: FlexCenterItems JustifyContentAround from "../../Assets/CSS/flex.css";
+    height: 0;
+    opacity: 0;
+    transform: translateY(-100px);
+    transition-duration: .3s;
+    transition-delay: .1s;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+}
+
+.listCoverItem.active {
+    transform: translateY(0);
+    opacity: 1;
+    height: 120px;
+}
+
+.coverImage {
+    composes: BorderLight from "../../Assets/CSS/color.css";
+    border: 2px solid;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+/** Radio Footer List *********************************************************************/
+
+.footer {
+    composes: FlexColumnItems from "../../Assets/CSS/flex.css";
+    composes: BgDark BorderLight from "../../Assets/CSS/color.css";
+    composes: TextCenter from "../../Assets/CSS/text.css";
+    border-top: 3px solid;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.footerStatus {
+    composes: TextUpperCase from "../../Assets/CSS/text.css";
+    composes: TextOrange from "../../Assets/CSS/color.css";
+    font-weight: bold;
+    margin: 0;
+}
+
+.footerStation {
+    composes: TextLight from "../../Assets/CSS/color.css";
+    margin: 0;
+}
+
+/** The End *******************************************************************************/
